@@ -1,0 +1,12 @@
+name: Call a reusable workflows
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  call-workflow-passing-data:
+    uses: mahesh288646/reusable/.github/workflows/reusable.yml@main
+    with:
+      username: mona
