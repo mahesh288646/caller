@@ -6,7 +6,12 @@ on:
       - main
 
 jobs:
-  call-workflow-passing-data:
-    uses: mahesh288646/reusable/.github/workflows/reusable.yml@main
-    with:
-      username: mona
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4 # Necessaryy to access local action
+      - name: Local Action Call
+        id: local-action
+        uses: ./.github/actions/reusable
+        with:
+          name: "World"
