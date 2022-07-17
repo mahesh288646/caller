@@ -9,7 +9,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4 # Necessary to access local action
+      - uses: actions/checkout@v2.3.4 # Necessaryy to access local action
       - name: Local Action Call
         id: local-action
         uses: ./.github/actions/reusable
