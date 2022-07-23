@@ -12,4 +12,4 @@ permissions:
 
 jobs:
   compliance:
-    uses: open-sauced/open-sauced/.github/workflows/compliance.yml@main
+    uses: mahesh288646/reusable/.github/workflows/reusable1.yml@main
