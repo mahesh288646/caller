@@ -9,3 +9,5 @@ permissions:
 jobs:
   compliance:
     uses: mahesh288646/reusable/.github/workflows/reusable1.yml@main
+  compliance1:
+    uses: mahesh288646/reusable/.github/workflows/print.yml@main
