@@ -17,3 +17,7 @@ jobs:
     - name: Build the Docker image
       working-directory: nodejs
       run: docker build . --file ./Dockerfile --tag my-image-name:$(date +%s)
+    - name: Running
+      working-directory: nodejs
+      run: docker run -it my-image-name:$(date +%s) clean
+    
